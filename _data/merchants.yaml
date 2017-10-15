@@ -1,0 +1,47 @@
+- name: Amazon
+  url: https://www.amazon.co.uk/gp/deals
+  logo: Amazon.com-Logo.svg
+
+- name: Argos
+  url: http://www.argos.co.uk/events/black-friday.html
+  logo: Argos.svg
+
+- name: AO
+  url: http://ao.com/black-friday
+  logo: Ao_com.svg
+
+- name: Asda
+  url: https://direct.asda.com/george/glp-sale-landing,default,pg.html
+  logo: Asda_logo.svg
+
+- name: Carphone Warehouse
+  url: https://www.carphonewarehouse.com/special-offers/black-friday.html
+  logo: Carphone_Warehouse_logo.svg
+
+- name: eBay
+  url: https://www.ebay.co.uk/rpp/black-friday
+  logo: EBay_logo.svg
+
+- name: Halfords
+  url: http://www.halfords.com/advice/cycling/brands/black-friday
+  logo: Halfords.svg
+
+- name: Hobbycraft
+  url: http://www.hobbycraft.co.uk/black-friday-deals
+  logo: Hobbycraft-logo.svg
+
+- name: House of Fraser
+  url: https://www.houseoffraser.co.uk/black-friday
+  logo: Hof_Date_BW_Black_240517_download.jpg
+
+- name: Sainsburys
+  url: https://www.sainsburys.co.uk/webapp/wcs/stores/servlet/IdeasCategoryDisplayView?msg=&catalogId=10123&categoryId=247771&langId=44&storeId=10151&krypto=lOcPZeiPqDiwGfXKFBnpo6sbpDb4EkhTXrYAYHHREBUuAVGPOn4%2BUs0g6XejVMp%2Bz2F22Irpf4fdOSb%2Ft7QbF49EEObaHvoBDekhRMki94TKBtcHg6QdR81trw6jH%2B%2BewzO8rQwcRitEag6bMIHh0c6gVQG9JMI%2BMfjMV%2FU0eFQ769j0iT2u40HITTL73EMqmpEQz81njNONPPiBZ1OaQ5lGbq8s4RBwLjk3tGVpLNz14NhQNIznX%2FyX8HUkc%2B68QT6XxpBMA899mPKrZeBt1Mv92RwPc9XlV09g1YvxWqXwQOUU2kVAEFppWhgNvOhY&ddkey=http%3Agb%2Fgroceries%2Fget-ideas%2F-black-friday-%2F-black-friday-
+  logo: Sainsbury's_Logo.svg
+
+- name: Superdrug
+  url: https://www.superdrug.com/blackfriday
+  logo: Superdrug.svg
+
+- name: ASOS
+  url: http://www.asos.com/discover/black-friday-cyber-monday-deals/
+  logo: Asos.svg
