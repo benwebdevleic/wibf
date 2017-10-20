@@ -6,41 +6,30 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-15298256-8');
-</script>
 
-<script>
+  var trackOutboundLink = function(url) {
+    if (gtag) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+        'event_callback': function(){}
+      });
+    }
+  };
+
+  var handleOutboundLinkClick = function(event) {
+    var url = this.href;
+    trackOutboundLink(url);
+  };
 
   /*
-   * Countdown clock
+   * Track external links clicked
    */
-  /*var now = Math.floor((new Date()).getTime() / 1000);
-  var bfDate = Date.UTC(2017, 11, 24, 0, 0, 0, 0) / 1000;
-  var diff = bfDate - now;
+  var externalLinks = document.querySelectorAll('a[target="_blank"]');
 
-  var weeks = Math.floor(diff / 604800);
-  var daysLeft = Math.floor(diff - (weeks * (60 * 60 * 24 * 7)));
-  var days = Math.floor(daysLeft / 86400);
-  var hoursLeft = Math.floor(daysLeft - (days * 86400));
-  var hours = Math.floor(hoursLeft / 3600);
-  var minutesLeft = Math.floor(hoursLeft - (hours * 3600));
-  var minutes = Math.floor(minutesLeft / 60);
-  var seconds = diff % 60;
-
-  var outputStr = '';
-
-  if (weeks > 0) {
-    outputStr += weeks + ' weeks ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
-  } else {
-    if (days > 0) {
-      outputStr += days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
-    } else {
-      outputStr += hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
-    }
-  }
-
-  console.log(now, bfDate, bfDate - now, diff);
-  console.log(weeks, days, hours, minutes, seconds);
-  console.log(hoursLeft);
-  console.log(outputStr);*/
+  externalLinks.forEach(function (l) {
+    l.addEventListener('click', handleOutboundLinkClick);
+  });
 
 </script>
